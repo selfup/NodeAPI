@@ -1,10 +1,12 @@
-var express = require('express');
-var mod = require('./mod');
-var app = express();
+'use strict'
 
-app.get('/mod', mod.findAll);
+const express = require('express')
+const mod = require('./mod')
+const app = express()
 
-app.get('/mod/:id', mod.findById);
+app.get('/mods', mod.findAll)
 
-app.listen(3000);
-console.log('Port 3000');
+app.get('/mod/:id', mod.findById)
+
+app.listen(3000)
+console.log('Port 3000')
