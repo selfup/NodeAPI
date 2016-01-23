@@ -1,5 +1,5 @@
 exports.findAll = function(req, res) {
-    res.send([{name:'wine1'}, {name:'wine2'}, {name:'wine3'}]);
+    res.send([{name:'mod1'}, {name:'mod2'}, {name:'mod3'}]);
 };
 
 exports.findById = function(req, res) {
